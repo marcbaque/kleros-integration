@@ -1,0 +1,11 @@
+<div>
+  <div *ngFor="let item of items" style="margin-bottom: 16px">
+    <div style="display: flex; flex-direction: column">
+      {{ item.metadata.metadata.tcrTitle }}
+      <img
+        width="50"
+        [src]="'https://ipfs.kleros.io' + item.metadata.metadata.logoURI"
+      />
+    </div>
+  </div>
+</div>
